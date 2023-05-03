@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Delta Sigma Phi - Login Page</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <header>
+    <div class="Home">
+      <a class="active" href="Landing_page.html"
+        ><img
+          src="https://deltasig.org/wp-content/uploads/2018/01/Wordmark-01.png"
+          alt="Home"
+      /></a>
+    </div>
+  </header>
+  <body>
+    <section class="forms-section">
+      <h1 class="section-title">Login/Signup</h1>
+      <div class="forms">
+        <div class="form-wrapper is-active">
+          <button type="button" class="switcher switcher-login">
+            Login
+            <span class="underline"></span>
+          </button>
+          <form action="user.html" method="get" class="form form-login">
+            <fieldset>
+              <legend>Please, enter your email and password for login.</legend>
+              <div class="input-block">
+                <label for="login-email">E-mail</label>
+                <input id="login-email" type="email" required />
+              </div>
+              <div class="input-block">
+                <label for="login-password">Password</label>
+                <input id="login-password" type="password" required />
+              </div>
+            </fieldset>
+            <button onclick="login()" type="submit" class="btn-login">
+              Login
+            </button>
+          </form>
+        </div>
+        <div class="form-wrapper">
+          <button type="button" class="switcher switcher-signup">
+            Sign Up
+            <span class="underline"></span>
+          </button>
+          <form
+            action="register.html"
+            target="_blank"
+            method="post"
+            class="form form-signup"
+          >
+            <fieldset>
+              <legend>Please, enter your email, username, and password</legend>
+              <div class="input-block">
+                <label for="signup-email">Email</label>
+                <input id="email" type="email" required />
+              </div>
+              <div class="input-block">
+                <label for="signup-username">Username</label>
+                <input id="username" type="text" required />
+              </div>
+              <div class="input-block">
+                <label for="signup-password">Password</label>
+                <input id="password" type="password" required />
+              </div>
+            </fieldset>
+            <button onclick="send()" type="submit" class="btn-signup">
+              Sign Up
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCcTufUMCNXrFBj0rg95OMm6_WCV56-4Gw",
+        authDomain: "signup-40c78.firebaseapp.com",
+        projectId: "signup-40c78",
+        databaseURL: "https://signup-40c78-default-rtdb.firebaseio.com/",
+        storageBucket: "signup-40c78.appspot.com",
+        messagingSenderId: "1034251154598",
+        appId: "1:1034251154598:web:a55e8b057dc17ef34d3067",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="signup.js"></script>
+    <script src="animation.js"></script>
+  </body>
+</html>
