@@ -13,7 +13,7 @@ body .container {
 }
 
 h1 {
-  margin-bottom: -25rem;
+  margin-bottom: 2rem;
 }
 
 form {
@@ -21,7 +21,7 @@ form {
   flex-direction: column;
   width: 24em;
   gap: 1rem;
-  margin-bottom: 20rem;
+  margin-bottom: 30rem;
 }
 
 input,
