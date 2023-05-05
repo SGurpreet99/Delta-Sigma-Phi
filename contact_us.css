@@ -5,15 +5,24 @@
   border: 0;
 }
 
-body .container {
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
   height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
   display: grid;
   place-items: center;
 }
 
 h1 {
   margin-bottom: 2rem;
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 form {
@@ -30,6 +39,9 @@ textarea {
   padding: 1.4rem;
   background: transparent;
   border: 1px solid black;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 textarea {
@@ -42,6 +54,9 @@ button {
   cursor: pointer;
   background: #673de6;
   color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 button:hover {
@@ -63,24 +78,34 @@ nav a {
   display: block;
   text-decoration: none;
   color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 header {
   background-color: rgb(0, 158, 16);
-  padding: 20px;
+  padding: 10px;
   text-align: Left;
 }
 header h1 {
   color: white;
   margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
 }
+
 /* Footer Styles */
 footer {
+  background-color: rgb(0, 158, 16);
+  color:white;
+  padding: 10px;
   text-align: center;
-  background-color: rgba(0, 158, 16, 1);
-  color: #fff;
-  padding: .50rem;
-  margin-top: 2rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 footer p {
