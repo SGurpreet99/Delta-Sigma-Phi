@@ -70,3 +70,14 @@ header h1 {
   color: white;
   margin: 0;
 }
+footer {
+  text-align: center;
+  background-color: rgba(0, 158, 16, 1);
+  color: #fff;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+}
